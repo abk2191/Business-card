@@ -1,15 +1,21 @@
-* Prevent body scrolling and center content */ body {
+/* Prevent body scrolling and center content */
+body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll on entire page */
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0; /* Optional: for visual reference */
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw; /* Full viewport width */
-  max-width: 400px; /* Show only one card at a time */
+  width: 100vw;
+  max-width: 100%; /* Allow full viewport width for multiple card peeks */
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -18,16 +24,15 @@
   padding: 20px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory; /* Snap to cards */
-  margin: 0 auto; /* Center the wrapper */
+  scroll-snap-type: x mandatory; /* Force snap to cards */
 }
 
-/* Snap each card to center */
+/* Make each card snap to the center */
 .wrapper > * {
   display: inline-block;
   flex-shrink: 0;
   white-space: normal;
-  scroll-snap-align: center; /* Snap alignment */
+  scroll-snap-align: center; /* This makes each card snap to center */
 }
 
 .container {
@@ -43,14 +48,23 @@
   flex-shrink: 0;
 }
 
-/* Hide scrollbar for cleaner look (optional) */
+/* Hide scrollbar for cleaner look */
 .wrapper::-webkit-scrollbar {
   display: none;
 }
 
 .wrapper {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Optional: Add some visual indicators for the carousel */
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  flex-shrink: 0;
+  width: calc(50vw - 175px - 20px); /* Center cards mathematically */
+  height: 1px;
 }
 
 /* Rest of your existing styles remain the same */
