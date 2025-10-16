@@ -1,3 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 16px; /* Add spacing between cards */
+  padding: 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Ensure Maincard components are inline-block for horizontal scrolling */
+.wrapper > * {
+  display: inline-block;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  white-space: normal; /* Allow text wrapping inside cards */
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,15 +30,10 @@
   padding: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   background-color: black;
+  flex-shrink: 0; /* Important: prevent card shrinking */
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
+/* Rest of your existing styles remain the same */
 .container p {
   margin: 0;
   padding: 0;
@@ -32,13 +49,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  -webkit-tap-highlight-color: transparent; /* For iOS/Safari */
-  tap-highlight-color: transparent; /* Standard property */
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 
 .profileimage:active {
-  transform: scale(1.2); /* 5% larger */
+  transform: scale(1.2);
 }
 
 .profileimage {
