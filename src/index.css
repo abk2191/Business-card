@@ -136,3 +136,10 @@ body {
 .sendmsgbtn:active {
   background-color: rgb(27, 89, 58);
 }
+
+.threedots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}

@@ -40,6 +40,17 @@ function App() {
           handleSendMessage={handleSendMessage}
         />
       </div>
+      <div className="threedots">
+        <p>
+          <i class="fa-solid fa-circle"></i>
+        </p>
+        <p>
+          <i class="fa-solid fa-circle"></i>
+        </p>
+        <p>
+          <i class="fa-solid fa-circle"></i>
+        </p>
+      </div>
     </>
   );
 }
