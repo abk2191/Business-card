@@ -19,7 +19,7 @@ body {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  padding: 20px 0;
+
   gap: 20px;
 
   /* Force hardware acceleration for smoother scrolling */
