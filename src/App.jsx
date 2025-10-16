@@ -91,6 +91,13 @@ function App() {
             ></i>
             Email: abhishek.kabi.21@gmail.com
           </p>
+          <p>
+            <i
+              class="fa-solid fa-briefcase"
+              style={{ fontSize: "18px", padding: "6px" }}
+            ></i>
+            Services: Full-Stack developer | UI/UX Designer | Websites/Apps
+          </p>
           <hr
             style={{
               border: "none",
