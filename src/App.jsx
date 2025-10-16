@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Secondcard from "./secondcard";
+import Thirdcard from "./thirdcard";
 import Maincard from "./maincard";
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
           handleSendMessage={handleSendMessage}
         />
 
-        <Maincard
+        <Thirdcard
           handleFollow={handleFollow}
           handleSendMessage={handleSendMessage}
         />
