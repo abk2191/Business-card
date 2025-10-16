@@ -1,23 +1,33 @@
+* Prevent body scrolling and center content */ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll on entire page */
+}
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 100vw; /* Full viewport width */
+  max-width: 400px; /* Show only one card at a time */
 
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  gap: 16px; /* Add spacing between cards */
+  gap: 16px;
   padding: 20px;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; /* Snap to cards */
+  margin: 0 auto; /* Center the wrapper */
 }
 
-/* Ensure Maincard components are inline-block for horizontal scrolling */
+/* Snap each card to center */
 .wrapper > * {
   display: inline-block;
-  flex-shrink: 0; /* Prevent cards from shrinking */
-  white-space: normal; /* Allow text wrapping inside cards */
+  flex-shrink: 0;
+  white-space: normal;
+  scroll-snap-align: center; /* Snap alignment */
 }
 
 .container {
@@ -30,7 +40,17 @@
   padding: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   background-color: black;
-  flex-shrink: 0; /* Important: prevent card shrinking */
+  flex-shrink: 0;
+}
+
+/* Hide scrollbar for cleaner look (optional) */
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Rest of your existing styles remain the same */
