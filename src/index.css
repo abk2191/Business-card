@@ -32,8 +32,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1);
-  transition: transform 0.3s ease;
+
+  -webkit-tap-highlight-color: transparent; /* For iOS/Safari */
+  tap-highlight-color: transparent; /* Standard property */
 }
 
 .profileimage:active {
@@ -44,6 +45,7 @@
   border-radius: 50%;
   border: 2px solid white;
   cursor: pointer;
+  transform: scale(1);
   transition: transform 0.3s ease;
 }
 
