@@ -23,16 +23,17 @@ function Secondcard({ handleFollow, handleSendMessage }) {
           textAlign: "center",
         }}
       >
-        <i class="fa-solid fa-building-columns"></i> Vellore Institute of
-        Technology (VIT){" "}
+        <i class="fa-solid fa-building-columns" style={{ color: "gold" }}></i>{" "}
+        Vellore Institute of Technology (VIT){" "}
       </h3>
       <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
-        <i class="fa-solid fa-graduation-cap"></i> Course: B.Tech - Information
-        Technology & Engineering.
+        <i class="fa-solid fa-graduation-cap" style={{ color: "green" }}></i>{" "}
+        Course: B.Tech - Information Technology & Engineering.
       </p>
 
       <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
-        <i class="fa-solid fa-star-half-stroke"></i> Grade: 6.68
+        <i class="fa-solid fa-star-half-stroke" style={{ color: "yellow" }}></i>{" "}
+        Grade: 6.68
       </p>
       <hr
         style={{
@@ -46,16 +47,17 @@ function Secondcard({ handleFollow, handleSendMessage }) {
         Tech Skills:
       </h3>
       <p>
-        <i class="fa-brands fa-react"></i> React
+        <i class="fa-brands fa-react" style={{ color: "aqua" }}></i> React
       </p>
       <p>
-        <i class="fa-brands fa-square-js"></i> Javascript
+        <i class="fa-brands fa-square-js" style={{ color: "yellow" }}></i>{" "}
+        Javascript
       </p>
       <p>
-        <i class="fa-brands fa-html5"></i> HTML 5
+        <i class="fa-brands fa-html5" style={{ color: "orange" }}></i> HTML 5
       </p>
       <p>
-        <i class="fa-brands fa-css3-alt"></i> CSS
+        <i class="fa-brands fa-css3-alt" style={{ color: "blue" }}></i> CSS
       </p>
       <hr
         style={{
