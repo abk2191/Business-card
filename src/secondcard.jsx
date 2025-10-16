@@ -4,12 +4,9 @@ function Secondcard({ handleFollow, handleSendMessage }) {
   return (
     <div className="container">
       <div className="profilePicture">
-        <img
-          src={myimage}
-          alt="toon image"
-          style={{ height: "95px", width: "95px" }}
-          className="profileimage"
-        />
+        <h1 style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
+          Education Qualification
+        </h1>
       </div>
       <hr
         style={{
@@ -19,74 +16,15 @@ function Secondcard({ handleFollow, handleSendMessage }) {
           margin: "20px 0",
         }}
       />
-      <p>
-        <i
-          class="fa-solid fa-circle-user"
-          style={{ fontSize: "18px", padding: "6px", color: "blue" }}
-        ></i>
-        Name: Abhishek Kabi
+      <h3 style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
+        Vellore Institute of Technology (VIT){" "}
+      </h3>
+      <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
+        Course: Information Technology & Engineering
       </p>
-      <p>
-        <i
-          class="fa-solid fa-cake-candles"
-          style={{ fontSize: "18px", padding: "6px", color: "magenta" }}
-        ></i>
-        DOB: 21/12/1991
+      <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
+        Grade: 6.68
       </p>
-
-      <p>
-        {" "}
-        <i
-          class="fa-solid fa-house"
-          style={{ fontSize: "18px", padding: "6px", color: "gold" }}
-        ></i>
-        Home: Coochbehar, West Bengal
-      </p>
-      <p>
-        <i
-          class="fa-solid fa-location-dot"
-          style={{ fontSize: "18px", padding: "6px", color: "red" }}
-        ></i>
-        Lives in: Bangalore, Karnataka
-      </p>
-      <p>
-        <i
-          class="fa-solid fa-square-phone"
-          style={{ fontSize: "18px", padding: "6px", color: "green" }}
-        ></i>
-        Mobile: +919223522166
-      </p>
-      <p>
-        <i
-          class="fa-solid fa-envelope"
-          style={{ fontSize: "18px", padding: "6px", color: "lightgreen" }}
-        ></i>
-        Email: abhishek.kabi.21@gmail.com
-      </p>
-      <p>
-        <i
-          class="fa-solid fa-briefcase"
-          style={{ fontSize: "18px", padding: "6px", color: "brown" }}
-        ></i>
-        Services: Full-Stack developer | UI/UX Designer | Websites/Apps | Tech
-        Support
-      </p>
-      <hr
-        style={{
-          border: "none",
-          height: "1px",
-          backgroundColor: "#ccc",
-          margin: "20px 0",
-        }}
-      />
-      <button className="addfrndbutton" onClick={handleFollow}>
-        <i class="fa-brands fa-instagram" style={{ padding: "8px" }}></i>
-        Follow
-      </button>
-      <button className="sendmsgbtn" onClick={handleSendMessage}>
-        <i class="fa-brands fa-whatsapp" style={{ padding: "8px" }}></i>Send
-        Message
-      </button>
     </div>
   );
 }

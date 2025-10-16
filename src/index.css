@@ -7,32 +7,42 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f0f0f0; /* Optional: for visual reference */
+  background: #f0f0f0;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   width: 100vw;
-  max-width: 100%; /* Allow full viewport width for multiple card peeks */
-
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
-  gap: 16px;
-  padding: 20px;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory; /* Force snap to cards */
+  padding: 20px 0;
+  gap: 20px;
+
+  /* Force hardware acceleration for smoother scrolling */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
-/* Make each card snap to the center */
+/* Center the first card initially */
+.wrapper::before {
+  content: "";
+  flex: 0 0 calc(50vw - 175px - 10px);
+  height: 1px;
+}
+
+.wrapper::after {
+  content: "";
+  flex: 0 0 calc(50vw - 175px - 10px);
+  height: 1px;
+}
+
 .wrapper > * {
-  display: inline-block;
-  flex-shrink: 0;
-  white-space: normal;
-  scroll-snap-align: center; /* This makes each card snap to center */
+  flex: 0 0 auto;
+  scroll-snap-align: center;
 }
 
 .container {
@@ -42,13 +52,14 @@ body {
   border: 1px solid rgb(190, 188, 188);
   border-radius: 10px;
   width: 350px;
+  height: 600px;
   padding: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   background-color: black;
   flex-shrink: 0;
 }
 
-/* Hide scrollbar for cleaner look */
+/* Hide scrollbar but keep functionality */
 .wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -56,15 +67,6 @@ body {
 .wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-/* Optional: Add some visual indicators for the carousel */
-.wrapper::before,
-.wrapper::after {
-  content: "";
-  flex-shrink: 0;
-  width: calc(50vw - 175px - 20px); /* Center cards mathematically */
-  height: 1px;
 }
 
 /* Rest of your existing styles remain the same */

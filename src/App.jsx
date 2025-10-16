@@ -29,7 +29,7 @@ function App() {
           handleSendMessage={handleSendMessage}
         />
 
-        <Maincard
+        <Secondcard
           handleFollow={handleFollow}
           handleSendMessage={handleSendMessage}
         />
