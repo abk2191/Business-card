@@ -96,7 +96,8 @@ function App() {
               class="fa-solid fa-briefcase"
               style={{ fontSize: "18px", padding: "6px" }}
             ></i>
-            Services: Full-Stack developer | UI/UX Designer | Websites/Apps
+            Services: Full-Stack developer | UI/UX Designer | Websites/Apps |
+            Tech Support
           </p>
           <hr
             style={{
