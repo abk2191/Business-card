@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid rgb(190, 188, 188);
+  border-radius: 10px;
+  width: 350px;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container p {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.profilePicture {
+  background-color: #464646;
+  height: 120px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileimage:hover {
+  transform: scale(1.05); /* 5% larger */
+}
+
+.profileimage {
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.addfrndbutton {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(18, 18, 99);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.addfrndbutton:hover {
+  background-color: rgb(37, 37, 106);
+}
+
+.addfrndbutton:active {
+  background-color: rgb(18, 18, 99);
+}
+
+.sendmsgbtn {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(27, 89, 58);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.sendmsgbtn:hover {
+  background-color: rgb(7, 97, 54);
+}
+
+.sendmsgbtn:active {
+  background-color: rgb(27, 89, 58);
+}
