@@ -143,13 +143,13 @@ function App() {
       </div>
       <div className="threedots">
         <p style={{ opacity: currentIndex === 0 ? 1 : 0.3 }}>
-          <i className="fa-solid fa-circle"></i>
+          <i className="fa-solid fa-circle" style={{ color: "white" }}></i>
         </p>
         <p style={{ opacity: currentIndex === 1 ? 1 : 0.3 }}>
-          <i className="fa-solid fa-circle"></i>
+          <i className="fa-solid fa-circle" style={{ color: "white" }}></i>
         </p>
         <p style={{ opacity: currentIndex === 2 ? 1 : 0.3 }}>
-          <i className="fa-solid fa-circle"></i>
+          <i className="fa-solid fa-circle" style={{ color: "white" }}></i>
         </p>
       </div>
     </>
