@@ -202,3 +202,9 @@ body {
     background-color: bisque;
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
