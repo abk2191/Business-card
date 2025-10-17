@@ -1,6 +1,6 @@
 import myimage from "./assets/me.jpg";
 
-function Secondcard({ handleFollow, handleSendMessage }) {
+function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
   return (
     <div className="container">
       {/* Scrollable Content */}
@@ -187,6 +187,7 @@ function Secondcard({ handleFollow, handleSendMessage }) {
       {/* Fixed Download Button */}
       <div className="download-resume-button-div">
         <button
+          onClick={handleDownloadResume}
           style={{
             backgroundColor: "gold",
             color: "black",

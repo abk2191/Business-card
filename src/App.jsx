@@ -7,6 +7,30 @@ import { motion } from "framer-motion";
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const handleShowProjectWordle = () => {
+    window.open(
+      "https://abk2191.github.io/wordle/",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
+  const handleShowCodeWordle = () => {
+    window.open(
+      "https://github.com/abk2191/wordle",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
+  const handleDownloadResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1Kz1WPUbnMFzvP_PGeaTzU92cHo0FVPP3/view?usp=sharing",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   const handleFollow = () => {
     window.open(
       "https://instagram.com/weirdmonk2191",
@@ -63,6 +87,7 @@ function App() {
           <Secondcard
             handleFollow={handleFollow}
             handleSendMessage={handleSendMessage}
+            handleDownloadResume={handleDownloadResume}
           />
         </motion.div>
 
@@ -75,6 +100,8 @@ function App() {
           <Thirdcard
             handleFollow={handleFollow}
             handleSendMessage={handleSendMessage}
+            handleShowCodeWordle={handleShowCodeWordle}
+            handleShowProjectWordle={handleShowProjectWordle}
           />
         </motion.div>
       </div>

@@ -1,6 +1,11 @@
 import myimage from "./assets/me.jpg";
 
-function Thirdcard({ handleFollow, handleSendMessage }) {
+function Thirdcard({
+  handleFollow,
+  handleSendMessage,
+  handleShowCodeWordle,
+  handleShowProjectWordle,
+}) {
   return (
     <div className="container">
       <div className="profilePicture">
@@ -38,10 +43,10 @@ function Thirdcard({ handleFollow, handleSendMessage }) {
           UI without any external libraries.
         </p>
         <div className="project-buttons">
-          <button className="code-button">
+          <button className="code-button" onClick={handleShowCodeWordle}>
             <i class="fa-brands fa-github"></i> Code
           </button>
-          <button className="run-button">
+          <button className="run-button" onClick={handleShowProjectWordle}>
             <i class="fa-solid fa-rocket"></i> Run Project
           </button>
         </div>
