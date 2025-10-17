@@ -4,8 +4,16 @@ function Thirdcard({ handleFollow, handleSendMessage }) {
   return (
     <div className="container">
       <div className="profilePicture">
-        <h3 style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
-          Projects
+        <h3
+          style={{
+            color: "white",
+            fontFamily: "Inter, sans-serif",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
+          <i class="fa-solid fa-diagram-project"></i>Projects
         </h3>
       </div>
       <hr
@@ -23,7 +31,7 @@ function Thirdcard({ handleFollow, handleSendMessage }) {
         className="addfrndbutton"
         style={{ backgroundColor: "yellowgreen", color: "black" }}
       >
-        <i class="fa-solid fa-at" style={{ padding: "8px" }}></i>
+        <i className="fa-solid fa-at" style={{ padding: "8px" }}></i>
         Send Me an Email
       </button>
     </div>

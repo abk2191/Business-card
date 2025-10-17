@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f0f0f0;
+  background: linear-gradient(135deg, #c3cfe2 0%, #f5f7fa 100%);
 }
 
 .wrapper {
@@ -48,6 +48,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 8px;
   border: 1px solid rgb(190, 188, 188);
   border-radius: 10px;
@@ -57,6 +58,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   background-color: black;
   flex-shrink: 0;
+  overflow-y: auto;
 }
 
 /* Hide scrollbar but keep functionality */
@@ -142,4 +144,61 @@ body {
   gap: 4px;
   align-items: center;
   justify-content: center;
+}
+
+.container h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container p {
+  margin: 0;
+  padding: 0;
+}
+
+.edu-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.tech-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.download-resume-button-div {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  padding: 10px 0;
+  z-index: 10;
+  border-top: 1px solid #333;
+}
+
+.scrollable-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 70px; /* Space for the fixed button */
+}
+@media (min-width: 769px) {
+  /* Your desktop styles here */
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .threedots {
+    display: none;
+    background-color: bisque;
+  }
 }
