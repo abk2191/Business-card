@@ -197,6 +197,40 @@ body {
   gap: 10px;
 }
 
+.project-list {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.project-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.code-button {
+  background-color: blue;
+  height: 35px;
+  width: 80px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.run-button {
+  background-color: green;
+  height: 35px;
+  width: 130px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
 /****************************************************/
 /* Hover animations */
 
