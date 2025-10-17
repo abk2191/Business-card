@@ -188,6 +188,11 @@ body {
   overflow-y: auto;
   padding-bottom: 70px; /* Space for the fixed button */
 }
+
+/****************************************************/
+/* Hover animations */
+
+/****************************************************/
 @media (min-width: 769px) {
   /* Your desktop styles here */
   .wrapper {
