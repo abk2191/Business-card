@@ -7,7 +7,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #c3cfe2 0%, #f5f7fa 100%);
+  background-image: url("./assets/earth.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .wrapper {
@@ -247,7 +251,6 @@ body {
 
   .threedots {
     display: none;
-    background-color: bisque;
   }
 }
 
