@@ -190,6 +190,13 @@ body {
   padding-bottom: 70px; /* Space for the fixed button */
 }
 
+.skill-description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
 /****************************************************/
 /* Hover animations */
 
