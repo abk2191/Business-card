@@ -205,6 +205,6 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    width: 250px;
+    width: 100px;
   }
 }
