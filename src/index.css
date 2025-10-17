@@ -54,13 +54,13 @@ body {
   flex-direction: column;
   position: relative;
   gap: 8px;
-  border: 1px solid rgb(190, 188, 188);
+  border: 1px solid black;
   border-radius: 10px;
   width: 350px;
   height: 600px;
   padding: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
   flex-shrink: 0;
   overflow-y: auto;
 }
