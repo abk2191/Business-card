@@ -45,7 +45,13 @@ function Thirdcard({
             className="project-list"
             style={{ marginBottom: "20px" }}
           >
-            <h1 style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
+            <h1
+              style={{
+                color: "yellow",
+                fontWeight: "bold",
+                fontFamily: "Inter, sans-serif",
+              }}
+            >
               {project.id}. {project.title}
             </h1>
             <p style={{ color: "grey", fontFamily: "Inter, sans-serif" }}>
