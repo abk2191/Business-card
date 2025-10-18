@@ -50,6 +50,7 @@ function Thirdcard({
                 color: "white",
                 fontWeight: "bold",
                 fontFamily: "Inter, sans-serif",
+                marginBottom: "6px",
               }}
             >
               {project.id}. {project.title}
