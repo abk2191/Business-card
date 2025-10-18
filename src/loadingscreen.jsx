@@ -5,7 +5,7 @@ function Loadingscreen() {
         className="gradient-text"
         style={{
           fontFamily: "Dancing Script, cursive",
-          fontSize: "80px",
+          fontSize: "60px",
           fontWeight: "bolder",
         }}
       >
