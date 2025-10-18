@@ -253,19 +253,19 @@ function App() {
         <p style={{ opacity: currentIndex === 0 ? 1 : 0.3 }}>
           <i
             className="fa-solid fa-circle"
-            style={{ color: "grey", fontSize: "12px" }}
+            style={{ color: "white", fontSize: "12px" }}
           ></i>
         </p>
         <p style={{ opacity: currentIndex === 1 ? 1 : 0.3 }}>
           <i
             className="fa-solid fa-circle"
-            style={{ color: "grey", fontSize: "12px" }}
+            style={{ color: "white", fontSize: "12px" }}
           ></i>
         </p>
         <p style={{ opacity: currentIndex === 2 ? 1 : 0.3 }}>
           <i
             className="fa-solid fa-circle"
-            style={{ color: "grey", fontSize: "12px" }}
+            style={{ color: "white", fontSize: "12px" }}
           ></i>
         </p>
       </div>
