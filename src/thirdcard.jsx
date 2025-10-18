@@ -20,7 +20,7 @@ function Thirdcard({
           <div className="profilePicture">
             <h3
               style={{
-                color: "black",
+                color: "white",
                 fontFamily: "Inter, sans-serif",
                 display: "flex",
                 alignItems: "center",
@@ -47,7 +47,7 @@ function Thirdcard({
           >
             <h1
               style={{
-                color: "white",
+                color: "#4b2f8dff",
                 fontWeight: "bold",
                 fontFamily: "Inter, sans-serif",
                 marginBottom: "6px",
@@ -55,7 +55,7 @@ function Thirdcard({
             >
               {project.id}. {project.title}
             </h1>
-            <p style={{ color: "black", fontFamily: "Inter, sans-serif" }}>
+            <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
               {project.description}
             </p>
             <div className="project-buttons">

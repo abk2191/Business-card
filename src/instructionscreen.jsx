@@ -7,11 +7,11 @@ function Instructionscreen({ handleInstructionClose }) {
         </button>
       </div>
       <div className="instructions">
-        <p style={{ color: "white" }}>
+        <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
           <i class="fa-solid fa-lightbulb" style={{ color: "white" }}></i> Swipe
           left or right to reveal all cards.
         </p>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "white", fontFamily: "Inter, sans-serif" }}>
           <i class="fa-solid fa-lightbulb" style={{ color: "white" }}></i>{" "}
           Scroll on cards to see all details.
         </p>

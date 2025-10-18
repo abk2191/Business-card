@@ -9,7 +9,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
           <div className="profilePicture">
             <h3
               style={{
-                color: "black",
+                color: "white",
                 fontFamily: "Inter, sans-serif",
                 display: "flex",
                 alignItems: "center",
@@ -18,7 +18,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             >
               <i
                 className="fa-solid fa-graduation-cap"
-                style={{ color: "black" }}
+                style={{ color: "white" }}
               ></i>
               Education & Qualification
             </h3>
