@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Secondcard from "./secondcard";
 import Thirdcard from "./thirdcard";
 import Maincard from "./maincard";
 import { motion } from "framer-motion";
+import Loadingscreen from "./loadingscreen";
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const projects = [
     {
@@ -208,67 +218,73 @@ function App() {
 
   return (
     <>
-      <div className="wrapper" onScroll={handleScroll}>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Maincard
-            handleFollow={handleFollow}
-            handleSendMessage={handleSendMessage}
-          />
-        </motion.div>
+      {isLoading && <Loadingscreen />}
 
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          <Secondcard
-            handleFollow={handleFollow}
-            handleSendMessage={handleSendMessage}
-            handleDownloadResume={handleDownloadResume}
-          />
-        </motion.div>
+      {!isLoading && (
+        <>
+          <div className="wrapper" onScroll={handleScroll}>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Maincard
+                handleFollow={handleFollow}
+                handleSendMessage={handleSendMessage}
+              />
+            </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <Thirdcard
-            handleFollow={handleFollow}
-            handleSendMessage={handleSendMessage}
-            handleShowCode={handleShowCode}
-            handleShowProject={handleShowProject}
-            projects={projects}
-          />
-        </motion.div>
-      </div>
-      <div className="threedots">
-        <p style={{ opacity: currentIndex === 0 ? 1 : 0.3 }}>
-          <i
-            className="fa-solid fa-circle"
-            style={{ color: "white", fontSize: "12px" }}
-          ></i>
-        </p>
-        <p style={{ opacity: currentIndex === 1 ? 1 : 0.3 }}>
-          <i
-            className="fa-solid fa-circle"
-            style={{ color: "white", fontSize: "12px" }}
-          ></i>
-        </p>
-        <p style={{ opacity: currentIndex === 2 ? 1 : 0.3 }}>
-          <i
-            className="fa-solid fa-circle"
-            style={{ color: "white", fontSize: "12px" }}
-          ></i>
-        </p>
-      </div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Secondcard
+                handleFollow={handleFollow}
+                handleSendMessage={handleSendMessage}
+                handleDownloadResume={handleDownloadResume}
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Thirdcard
+                handleFollow={handleFollow}
+                handleSendMessage={handleSendMessage}
+                handleShowCode={handleShowCode}
+                handleShowProject={handleShowProject}
+                projects={projects}
+              />
+            </motion.div>
+          </div>
+          <div className="threedots">
+            <p style={{ opacity: currentIndex === 0 ? 1 : 0.3 }}>
+              <i
+                className="fa-solid fa-circle"
+                style={{ color: "white", fontSize: "12px" }}
+              ></i>
+            </p>
+            <p style={{ opacity: currentIndex === 1 ? 1 : 0.3 }}>
+              <i
+                className="fa-solid fa-circle"
+                style={{ color: "white", fontSize: "12px" }}
+              ></i>
+            </p>
+            <p style={{ opacity: currentIndex === 2 ? 1 : 0.3 }}>
+              <i
+                className="fa-solid fa-circle"
+                style={{ color: "white", fontSize: "12px" }}
+              ></i>
+            </p>
+          </div>
+        </>
+      )}
     </>
   );
 }
