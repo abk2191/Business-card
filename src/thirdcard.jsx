@@ -20,7 +20,7 @@ function Thirdcard({
           <div className="profilePicture">
             <h3
               style={{
-                color: "white",
+                color: "black",
                 fontFamily: "Inter, sans-serif",
                 display: "flex",
                 alignItems: "center",

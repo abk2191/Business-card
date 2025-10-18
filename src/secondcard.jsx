@@ -9,7 +9,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
           <div className="profilePicture">
             <h3
               style={{
-                color: "white",
+                color: "black",
                 fontFamily: "Inter, sans-serif",
                 display: "flex",
                 alignItems: "center",
@@ -18,7 +18,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             >
               <i
                 className="fa-solid fa-graduation-cap"
-                style={{ color: "white" }}
+                style={{ color: "black" }}
               ></i>
               Education & Qualification
             </h3>
@@ -42,7 +42,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             •{" "}
             <i
               className="fa-solid fa-building-columns"
-              style={{ color: "#464646" }}
+              style={{ color: "#1a1a1a" }}
             ></i>{" "}
             Vellore Institute of Technology (VIT){" "}
           </h3>
@@ -51,7 +51,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             •{" "}
             <i
               className="fa-solid fa-graduation-cap"
-              style={{ color: "rgb(120, 120, 39)" }}
+              style={{ color: "black" }}
             ></i>{" "}
             Course: B.Tech - Information Technology & Engineering.
           </p>
@@ -60,7 +60,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             •{" "}
             <i
               className="fa-solid fa-star-half-stroke"
-              style={{ color: "bisque" }}
+              style={{ color: "gold" }}
             ></i>{" "}
             Grade: 6.68
           </p>
@@ -99,7 +99,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             <i className="fa-brands fa-react" style={{ color: "aqua" }}></i>{" "}
             React
           </p>
-          <p style={{ color: "grey" }}>
+          <p style={{ color: "white" }}>
             Components, JSX, State, Props, Hooks, useState, useEffect, Event
             Handling, Conditional Rendering, Lists & Keys, Context API, Custom
             Hooks, Virtual DOM, Reconciliation, Fragments, Higher-Order
@@ -112,7 +112,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             ></i>{" "}
             Javascript
           </p>
-          <p style={{ color: "grey" }}>
+          <p style={{ color: "white" }}>
             Variables, Data Types, Operators, Type Conversion, Coercion,
             Function Declarations, Expressions, Arrow Functions, Parameters,
             Default Parameters, Higher-Order Functions, Callbacks, Object
@@ -123,7 +123,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             <i className="fa-brands fa-html5" style={{ color: "orange" }}></i>{" "}
             HTML 5
           </p>
-          <p style={{ color: "grey" }}>
+          <p style={{ color: "white" }}>
             HTML Syntax, DOCTYPE, HTML Element, Head, Body, Meta Tags, Headings,
             Paragraphs, Lists, Links, Horizontal Rules, Line Breaks, Strong,
             Emphasis, Mark, Small, Subscript, Superscript, Images, Audio, Video,
@@ -136,7 +136,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             <i className="fa-brands fa-css3-alt" style={{ color: "blue" }}></i>{" "}
             CSS
           </p>
-          <p style={{ color: "gray" }}>
+          <p style={{ color: "white" }}>
             Type, Class, ID, Universal, Attribute, Pseudo-class, Pseudo-element,
             Combinators, Content, Padding, Border, Margin, Box-sizing, Display,
             Position, Float, Clear, Z-index, Flex-container, Flex-items,
@@ -150,7 +150,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             <i className="fa-solid fa-microchip" style={{ color: "red" }}></i>{" "}
             AI
           </p>
-          <p style={{ color: "gray" }}>
+          <p style={{ color: "white" }}>
             I am proficient at using AI, regularly utilizing platforms like
             ChatGPT and DeepSeek to debug code, generate solutions, and overcome
             technical challenges. My strength lies in formulating clear,
@@ -162,7 +162,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             <i className="fa-brands fa-git-alt" style={{ color: "blue" }}></i>{" "}
             Git (Version Control)
           </p>
-          <p style={{ color: "gray" }}>
+          <p style={{ color: "white" }}>
             I am skilled at using Git for all aspects of version control, from
             basic commits to advanced branch management and collaboration. I
             confidently handle synchronization with remote repositories and can
@@ -173,7 +173,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             <i className="fa-brands fa-node-js" style={{ color: "yellow" }}></i>{" "}
             Node.js
           </p>
-          <p style={{ color: "gray" }}>
+          <p style={{ color: "white" }}>
             I leverage Node.js as the runtime environment for my backend
             development, primarily using the Express framework to build server
             logic and APIs. I am skilled at managing environment variables,
