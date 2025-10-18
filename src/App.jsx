@@ -4,10 +4,22 @@ import Thirdcard from "./thirdcard";
 import Maincard from "./maincard";
 import { motion } from "framer-motion";
 import Loadingscreen from "./loadingscreen";
+import Instructionscreen from "./instructionscreen";
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [instructionOpen, setInstructionOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setInstructionOpen(true); // Show instructions after loading
+    }, 6000);
+  }, []);
+
+  const handleInstructionClose = () => {
+    setInstructionOpen(false);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -222,6 +234,11 @@ function App() {
 
       {!isLoading && (
         <>
+          {instructionOpen && (
+            <Instructionscreen
+              handleInstructionClose={handleInstructionClose}
+            />
+          )}
           <div className="wrapper" onScroll={handleScroll}>
             <motion.div
               initial={{ opacity: 0, x: 50 }}

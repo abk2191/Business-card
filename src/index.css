@@ -290,6 +290,38 @@ body {
     left: 125%;
   }
 }
+
+.instruction-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 8px;
+  border-radius: 8px;
+  z-index: 10000; /* Very high z-index to ensure it's above everything */
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
 /****************************************************/
 /* Hover animations */
 
