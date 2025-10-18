@@ -4,12 +4,12 @@ function Loadingscreen() {
       <h1
         className="gradient-text"
         style={{
-          fontFamily: "Licorice, cursive",
+          fontFamily: "Dancing Script, cursive",
           fontSize: "80px",
           fontWeight: "bolder",
         }}
       >
-        Glass Resume
+        Abhishek Kabi
       </h1>
     </div>
   );
