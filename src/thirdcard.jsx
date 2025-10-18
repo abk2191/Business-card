@@ -47,14 +47,14 @@ function Thirdcard({
           >
             <h1
               style={{
-                color: "yellow",
+                color: "white",
                 fontWeight: "bold",
                 fontFamily: "Inter, sans-serif",
               }}
             >
               {project.id}. {project.title}
             </h1>
-            <p style={{ color: "grey", fontFamily: "Inter, sans-serif" }}>
+            <p style={{ color: "black", fontFamily: "Inter, sans-serif" }}>
               {project.description}
             </p>
             <div className="project-buttons">
