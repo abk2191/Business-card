@@ -187,10 +187,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-
   padding: 10px 0;
   z-index: 10;
   border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .scrollable-content {
@@ -328,7 +330,6 @@ body {
 .shimmer-button {
   position: relative;
   overflow: hidden;
-  background-color: gold;
   color: black;
   width: 100%;
   border-radius: 6px;
@@ -378,6 +379,26 @@ body {
   }
   100% {
     left: 100%;
+  }
+}
+
+.project-heading {
+  background: linear-gradient(90deg, #0ff, #9f00ff, #ff3ecf, #00f3ff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 /****************************************************/

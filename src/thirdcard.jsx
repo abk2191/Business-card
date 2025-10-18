@@ -47,8 +47,8 @@ function Thirdcard({
             style={{ marginBottom: "20px" }}
           >
             <h1
+              className="project-heading"
               style={{
-                color: "rgb(18, 18, 99)",
                 fontWeight: "bold",
                 fontFamily: "Inter, sans-serif",
                 marginBottom: "6px",
