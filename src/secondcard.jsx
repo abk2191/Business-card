@@ -42,7 +42,7 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
             •{" "}
             <i
               className="fa-solid fa-building-columns"
-              style={{ color: "blue" }}
+              style={{ color: "rgb(18, 18, 99)" }}
             ></i>{" "}
             Vellore Institute of Technology (VIT){" "}
           </h3>

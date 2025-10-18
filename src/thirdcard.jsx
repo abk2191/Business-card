@@ -48,7 +48,7 @@ function Thirdcard({
           >
             <h1
               style={{
-                color: "white",
+                color: "rgb(18, 18, 99)",
                 fontWeight: "bold",
                 fontFamily: "Inter, sans-serif",
                 marginBottom: "6px",
