@@ -6,8 +6,13 @@ function Maincard({ handleFollow, handleSendMessage }) {
       <div className="profilePicture">
         <img
           src={myimage}
-          alt="toon image"
-          style={{ height: "95px", width: "95px" }}
+          alt="my image"
+          style={{
+            height: "95px",
+            width: "95px",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
           className="profileimage"
         />
       </div>
@@ -35,14 +40,6 @@ function Maincard({ handleFollow, handleSendMessage }) {
       </p>
 
       <p>
-        {" "}
-        <i
-          className="fa-solid fa-house"
-          style={{ fontSize: "18px", padding: "6px", color: "gold" }}
-        ></i>
-        Home: Coochbehar, West Bengal
-      </p>
-      <p>
         <i
           className="fa-solid fa-location-dot"
           style={{ fontSize: "18px", padding: "6px", color: "red" }}
@@ -54,7 +51,7 @@ function Maincard({ handleFollow, handleSendMessage }) {
           className="fa-solid fa-square-phone"
           style={{ fontSize: "18px", padding: "6px", color: "green" }}
         ></i>
-        Mobile: +919223522166
+        Mobile: +919332522166
       </p>
       <p>
         <i

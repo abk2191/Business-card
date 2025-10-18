@@ -7,11 +7,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("./assets/earth.jpg");
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  /*background-image: url("./assets/earth.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
 .wrapper {
@@ -59,7 +60,7 @@ body {
   width: 350px;
   height: 600px;
   padding: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
   flex-shrink: 0;
   overflow-y: auto;
@@ -182,7 +183,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+
   padding: 10px 0;
   z-index: 10;
   border-top: 1px solid #333;
