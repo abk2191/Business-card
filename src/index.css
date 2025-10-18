@@ -414,6 +414,11 @@ body {
     padding: 20px;
   }
 
+  .container {
+    width: 350px;
+    height: 600px;
+  }
+
   .threedots {
     display: none;
   }
