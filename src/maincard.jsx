@@ -86,7 +86,7 @@ function Maincard({ handleFollow, handleSendMessage }) {
             }}
           />
         </div>
-        <h3 style={{ color: "white" }}>About Me</h3>
+        <h3 style={{ color: "white", textWrap: "wrap" }}>About Me</h3>{" "}
         <p>
           I am a passionate Front-End Developer with a strong foundation in
           JavaScript and React, building interactive and visually appealing web
