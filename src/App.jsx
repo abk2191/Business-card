@@ -14,15 +14,15 @@ function App() {
       description: (
         <>
           I built a Wordle clone using{" "}
-          <strong style={{ color: "white" }}>vanilla JavaScript</strong> with a
-          6x5 grid structure and keyboard input. The game logic validates
+          <strong style={{ color: "#c0bfbf" }}>vanilla JavaScript</strong> with
+          a 6x5 grid structure and keyboard input. The game logic validates
           guesses against a word dictionary and provides color-coded feedback
           (green/yellow/gray). I implemented keyboard event handling for user
-          input and <strong style={{ color: "white" }}>local storage</strong> to
-          track game statistics. The entire game features real-time validation,
-          win/lose conditions, and a{" "}
-          <strong style={{ color: "white" }}>responsive UI</strong> without any
-          external libraries.
+          input and <strong style={{ color: "#c0bfbf" }}>local storage</strong>{" "}
+          to track game statistics. The entire game features real-time
+          validation, win/lose conditions, and a{" "}
+          <strong style={{ color: "#c0bfbf" }}>responsive UI</strong> without
+          any external libraries.
         </>
       ),
       codeUrl: "https://github.com/abk2191/wordle",
@@ -34,20 +34,22 @@ function App() {
       description: (
         <>
           "I developed a clean and intuitive{" "}
-          <strong style={{ color: "white" }}>note-taking application</strong>{" "}
-          using <strong style={{ color: "white" }}>vanilla JavaScript</strong>{" "}
+          <strong style={{ color: "#c0bfbf" }}>note-taking application</strong>{" "}
+          using <strong style={{ color: "#c0bfbf" }}>vanilla JavaScript</strong>{" "}
           that allows users to{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             create, edit, and delete notes
           </strong>{" "}
           in real-time. The app features{" "}
-          <strong style={{ color: "white" }}>local storage integration</strong>{" "}
+          <strong style={{ color: "#c0bfbf" }}>
+            local storage integration
+          </strong>{" "}
           to automatically save all notes persistently in the browser. With{" "}
-          <strong style={{ color: "white" }}>responsive design</strong> and
+          <strong style={{ color: "#c0bfbf" }}>responsive design</strong> and
           smooth UI interactions. The entire application was{" "}
-          <strong style={{ color: "white" }}>built from scratch</strong> without
-          any external libraries, demonstrating{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>built from scratch</strong>{" "}
+          without any external libraries, demonstrating{" "}
+          <strong style={{ color: "#c0bfbf" }}>
             strong fundamentals in DOM manipulation
           </strong>{" "}
           and browser APIs.",
@@ -62,22 +64,22 @@ function App() {
       description: (
         <>
           "I built a dynamic todo application using{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             React with state management
           </strong>{" "}
           that allows users to efficiently{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             add, edit, and organize their daily tasks.
           </strong>{" "}
           The app features a customizable{" "}
-          <strong style={{ color: "white" }}>light and dark theme</strong> that
-          automatically adapts to system preferences while providing manual
+          <strong style={{ color: "#c0bfbf" }}>light and dark theme</strong>{" "}
+          that automatically adapts to system preferences while providing manual
           toggle control. Tasks can be marked complete, filtered by status, and
           persistently{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             stored in the browser's local storage.
           </strong>{" "}
-          <strong style={{ color: "white" }}>The responsive design</strong>{" "}
+          <strong style={{ color: "#c0bfbf" }}>The responsive design</strong>{" "}
           ensures seamless task management across all devices with smooth theme
           transitions."
         </>
@@ -91,27 +93,27 @@ function App() {
       description: (
         <>
           "I developed an inspirational{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             quote generator using React
           </strong>{" "}
           that fetches daily wisdom from the{" "}
-          <strong style={{ color: "white" }}>ZenQuotes API</strong> with
+          <strong style={{ color: "#c0bfbf" }}>ZenQuotes API</strong> with
           integrated background images for enhanced visual appeal. To overcome
           CORS restrictions, I{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             engineered a custom proxy server
           </strong>{" "}
           that securely relays API requests while maintaining optimal
           performance. The application features a clean,{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             responsive interface with smooth animations
           </strong>{" "}
           and{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             one-click sharing capabilities.
           </strong>{" "}
           This project demonstrates{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             advanced API integration techniques
           </strong>{" "}
           and problem-solving skills in handling cross-origin resource sharing
@@ -128,25 +130,25 @@ function App() {
       description: (
         <>
           "I built a comprehensive{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             weather application using React
           </strong>{" "}
           that fetches real-time meteorological data from the{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             OpenWeatherMap API to display current conditions and 5-day
             forecasts.
           </strong>{" "}
           The app features location-based weather detection, dynamic background
           themes that change based on weather conditions, and{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             detailed metrics like humidity, wind speed, and UV index.
           </strong>{" "}
           Users can{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             search for weather information in any city worldwide
           </strong>{" "}
           with autocomplete suggestions and persistent recent searches.{" "}
-          <strong style={{ color: "white" }}>
+          <strong style={{ color: "#c0bfbf" }}>
             This project demonstrates advanced API integration, responsive
             design principles,
           </strong>{" "}

@@ -7,7 +7,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  background: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");
+  background-color: #f9fafb;
   /*background-image: url("./assets/earth.jpg");
   background-size: cover;
   background-position: center center;
