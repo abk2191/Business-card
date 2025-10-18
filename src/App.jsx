@@ -189,11 +189,13 @@ function App() {
   };
 
   const handleDownloadResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/1Kz1WPUbnMFzvP_PGeaTzU92cHo0FVPP3/view?usp=sharing",
-      "_blank",
-      "noopener,noreferrer"
-    );
+    setTimeout(() => {
+      window.open(
+        "https://drive.google.com/file/d/1Kz1WPUbnMFzvP_PGeaTzU92cHo0FVPP3/view?usp=sharing",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }, 1500);
   };
 
   const handleFollow = () => {

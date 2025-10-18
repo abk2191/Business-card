@@ -188,9 +188,10 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
       <div className="download-resume-button-div">
         <button
           onClick={handleDownloadResume}
+          className="shimmer-button"
           style={{
-            backgroundColor: "gold",
-            color: "black",
+            backgroundColor: "rgb(18, 18, 99)",
+            color: "white",
             width: "100%",
             borderRadius: "6px",
             padding: "10px",

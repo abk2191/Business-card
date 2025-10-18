@@ -8,8 +8,9 @@ function Thirdcard({
   projects,
 }) {
   const handleSendEmail = () => {
-    window.open("mailto:abhishek.kabi.21@gmail.com", "_blank");
-    // Replace "your-email@example.com" with your actual email address
+    setTimeout(() => {
+      window.open("mailto:abhishek.kabi.21@gmail.com", "_blank");
+    }, 1500); // 2000 milliseconds = 2 seconds
   };
 
   return (
@@ -47,7 +48,7 @@ function Thirdcard({
           >
             <h1
               style={{
-                color: "#4b2f8dff",
+                color: "white",
                 fontWeight: "bold",
                 fontFamily: "Inter, sans-serif",
                 marginBottom: "6px",
@@ -79,8 +80,9 @@ function Thirdcard({
       {/* Fixed Email Button */}
       <div className="download-resume-button-div">
         <button
+          className="shimmer-button"
           style={{
-            backgroundColor: "rgb(16, 97, 16)",
+            backgroundColor: "rgb(27, 89, 58)",
             color: "white",
             width: "100%",
             borderRadius: "6px",

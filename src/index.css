@@ -322,6 +322,64 @@ body {
   align-items: center;
   justify-content: right;
 }
+
+/* Add these styles to your CSS file */
+
+.shimmer-button {
+  position: relative;
+  overflow: hidden;
+  background-color: gold;
+  color: black;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.shimmer-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Optional: Add hover effect */
+.shimmer-button:hover {
+  background-color: #ffd700; /* Slightly darker gold on hover */
+}
+
+.shimmer-button:active {
+  transform: scale(0.95); /* Reduce size to 95% */
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
 /****************************************************/
 /* Hover animations */
 
@@ -337,6 +395,7 @@ body {
 
   .threedots {
     display: none;
+    background-color: rgb(133, 115, 16);
   }
 }
 
