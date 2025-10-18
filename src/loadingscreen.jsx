@@ -4,7 +4,7 @@ function Loadingscreen() {
       <h1
         className="gradient-text"
         style={{
-          fontFamily: "Dancing Script, cursive",
+          fontFamily: "Licorice, cursive",
           fontSize: "60px",
           fontWeight: "bolder",
         }}
