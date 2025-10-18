@@ -61,7 +61,8 @@ body {
   padding: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   /*background-color: rgba(0, 0, 0, 0.8);  Black with 50% opacity */
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
   flex-shrink: 0;
   overflow-y: auto;
 }
